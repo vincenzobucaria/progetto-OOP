@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<db>
+    <url>jdbc:mariadb://localhost:3306/nomicosecitta</url><username>root</username><password></password>
+</db>
