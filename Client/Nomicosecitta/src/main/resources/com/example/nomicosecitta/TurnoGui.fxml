@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.nomicosecitta.ControllerFineTurno">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="608.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background.png" />
+         </image>
+      </ImageView>
+      <ScrollPane layoutX="63.0" layoutY="19.0" prefHeight="231.0" prefWidth="471.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0">
+               <children>
+                  <TableView fx:id="tabella">
+                    <columns>
+                      
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <ScrollPane fx:id="Container" layoutX="65.0" layoutY="272.0" prefHeight="91.0" prefWidth="471.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefWidth="469.0">
+               <children>
+                  <VBox fx:id="chatBox" prefHeight="91.0" prefWidth="471.0" />
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <TextField fx:id="ChatText" layoutX="65.0" layoutY="361.0" prefHeight="25.0" prefWidth="430.0" promptText="Chat" />
+      <Button fx:id="Invia" layoutX="495.0" layoutY="361.0" mnemonicParsing="false" onAction="#InviaChat" text="Invia" />
+      <Button fx:id="esci" layoutX="14.0" layoutY="20.0" mnemonicParsing="false" onAction="#esci" text="←" />
+   </children>
+</Pane>
